@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: aquamarine;
+  padding: 1rem;
+  /* 안쪽여백설정은 margin보다 padding으로 하는 걸 추천 */
+  border: 1px solid #000;
+}
+
+.container {
+  background-color: bisque;
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.children {
+  border: 1px solid #f00;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+}

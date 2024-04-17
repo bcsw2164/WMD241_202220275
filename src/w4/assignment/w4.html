@@ -14,9 +14,12 @@
       *::before,
       *::after {
         box-sizing: border-box;
+        /* borderbox는 거의 대부분 적용하는 편 */
         font-family: "Spoqa Han Sans Neo", "sans-serif";
+        /* 산세리프 구문을 추가하는이유? 앞에 쓴 폰트가 안불러질경우 아무 산세리프불러오기 */
         margin: 0;
         padding: 0;
+        /* 기존값인마진과패딩값을없애서여백xx */
       }
 
       body {
@@ -25,14 +28,20 @@
 
       .container {
         max-width: 64rem;
+        /* 1 rem : 시스템에 기본적으로 정의되어있는 기본크기, 정확하게 지정되어 있는 값이 있진 않음. 사용자가 기본 글꼴 크기를 14px로 설정했다면 그게 1rem / 16px로 지정했다면 그것또한 거기선 1rem... 보통은 16px */
         background-color: #f1eee8;
         padding-inline: 32px;
         padding-block: 32px;
         display: block;
       }
 
+      p {
+        margin-bottom: 0.5rem;
+      }
+
       img {
         max-width: 100%;
+        /* 이미지의 최대크기가 부모님보다 커지지 말아라. 100<-부모님 */
       }
 
       .callout {
@@ -51,6 +60,9 @@
       }
       p {
         line-height: 27px;
+      }
+      figure {
+        margin-block: 1.5rem;
       }
     </style>
   </head>
@@ -75,21 +87,23 @@
       >
         2023.01.04
       </p>
-      <img
-        src="../../../assets/pasta-carbonara.jpg"
-        alt="흰 접시 위에 담긴 카르보나라 파스타 관찰레가 같이 버무려져있다"
-        style="display: block"
-      />
-      <p
-        style="
-          font-size: 14px;
-          font-weight: 400;
-          color: #585550;
-          margin-block: 8px 24px;
-        "
-      >
-        사진: Chelsie Craig, 스타일링: Molly Baz
-      </p>
+      <figure>
+        <img
+          src="../../../assets/pasta-carbonara.jpg"
+          alt="흰 접시 위에 담긴 카르보나라 파스타 관찰레가 같이 버무려져있다"
+          style="display: block"
+        />
+        <figcaption
+          style="
+            font-size: 14px;
+            font-weight: 400;
+            color: #585550;
+            margin-block: 8px 24px;
+          "
+        >
+          사진: Chelsie Craig, 스타일링: Molly Baz
+        </figcaption>
+      </figure>
       <p style="font-size: 18px; font-weight: 500; margin-block: 16px">
         <strong>총 소요 시간 24분</strong>
       </p>

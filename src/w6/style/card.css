@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cute Font", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* 바디에다가 폰트를 넣는다? 바디는 모든 div 모든 내용들의 부모님임. 그래서 자식한테 다른 폰트를 따로 지정하지 않는 이상 body에서 지정한 폰트가 모든 자식들에게 적용됨 */
+}
+
+img {
+  max-width: 100%;
+  /* 최대크기가 부모님 크기를 넘지 말아라를 부여(여기서 부모는 div card),
+   이걸 설정해두면 굳이 넘쳐흐르는 이미지를 overflow 적용할 필요 ㄴㄴ */
+}
+
+.card.card--color-blue {
+  background-color: oklch(98% 0.025 200);
+  /* 순서가 영향을 미친다. 먼저 쓰인 것 보다 나중에 쓰인게 큰 영향을 미침, 힘이 셈 
+  순서를 생각하지 않고 이 상황을 해결하는 법. 앞에 .card를 써줌, card이름과 card--color-blue 이름을 모두 가지고 있는 걸 불러옴. 좀 더 구체적으로*/
+}
+
+.card {
+  margin-top: 3rem;
+  max-width: 25rem;
+  /* 1rem -> 16px */
+  background-color: oklch(98% 0.1 90);
+  /* overflow-x: hidden; */
+  /* padding: 1rem; */
+  border-radius: 12px;
+  /* border-radius 반지름 (모서리 둥글게) */
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card__img {
+  width: 100%;
+  /* 만약에 이미지가 부모 div보다 작은 사이즈면 이미지가 꽉 채워지지 않을 수가 있음. 이때 width를 100%로 설정해두면 부모에 맞게 100% 커짐. 이때 img 태그 전체에 적용하는 것 보다 이미지 div에 적용해 주는 것이 좋음*/
+}
+
+.card__top {
+  /* margin: 1rem; */
+  padding-inline: 16px;
+  padding-block: 12px;
+  /* 마진 말고 패딩으로, inline 양옆, block 위아래 */
+}
+
+.card__bottom {
+  padding: 1rem;
+}
+
+.card__p {
+  margin-top: 32px;
+  /* 띄우기 위해 마진을 아래에 두냐 위에두냐는 취향차이, 그러나 위에 두는 것을 더 추천/ padding(x) margin으로 */
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  /* 글자의 베이스라인에서 그다음줄 베이스라인까지의 크기가 1.5배 되는 zone에 있다는뜻 */
+}
+
+.card__subtitle {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  line-height: 1.5rem;
+}
+
+.card__bottom .card__title {
+  font-weight: 400;
+}
+
+.card__bottom .card__subtitle {
+  margin-top: 0;
+}

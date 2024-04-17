@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: aqua;
+  max-width: 600px;
+  padding: 1.5rem;
+}
+
+.card__img {
+  max-width: 100%;
+  /* 부모가 .card 600 이기때문에 100%=600px 최대치 */
+}
