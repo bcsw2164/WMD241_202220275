@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>w7-Flex basic</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="section">
+      <h1>Flex basic</h1>
+    </div>
+    <div class="section">
+      <h2>without Flex</h2>
+      <div class="container">
+        <div>Lorem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>with Flex</h2>
+      <div class="container flex-container">
+        <!-- 위의 컨테이너와 구별하기 위해서 flex-container라는 class이름을 새로 추가해줌. 이후 css에서는 아래에 .flex-cntainer만 입력한뒤 flex값만 추가해주면 위에서 적용했던 container의 css속성을 그대로 가지면서 flex적용됨 -->
+        <div>Lorem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>with Flex (small children)</h2>
+      <div class="container flex-container">
+        <!-- (div>{short text$})*5 이렇게 치면 아래처럼됨 -->
+        <div>short text1</div>
+        <div>short text2</div>
+        <div>short text3</div>
+        <div>short text4</div>
+        <div>short text5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex grow and shrink</h2>
+      <div class="container flex-container">
+        <!-- 얘네의 아래 이름은 flex-child임(원래 그렇게 부름) -->
+        <div class="flex-child-opt1">short text1</div>
+        <div class="flex-child-opt1">short text2</div>
+        <div class="flex-child-opt1">short text3</div>
+        <div class="flex-child-opt1">short text4</div>
+        <div class="flex-child-opt1">short text5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex grow and shrink (equal width)</h2>
+      <div class="container flex-container">
+        <!-- 얘네의 아래 이름은 flex-child임(원래 그렇게 부름) -->
+        <div class="flex-child-opt2">short text1</div>
+        <div class="flex-child-opt2">short text2</div>
+        <div class="flex-child-opt2">short text3</div>
+        <div class="flex-child-opt2">short text4</div>
+        <div class="flex-child-opt2">short text5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>flex grow and shrink (equal width)</h2>
+      <div class="container flex-container">
+        <div class="flex-child-opt2">Lorem.</div>
+        <div class="flex-child-opt2">Lorem ipsum dolor sit amet.</div>
+        <div class="flex-child-opt2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div class="flex-child-opt2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div class="flex-child-opt2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Flex gap</h2>
+      <div class="container flex-container flex-container-opt1">
+        <div>short text1</div>
+        <div>short text2</div>
+        <div>short text3</div>
+        <div>short text4</div>
+        <div>short text5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Flex justify-content 가로정렬</h2>
+      <div
+        class="container flex-container flex-container-opt1 flex-container-opt2"
+      >
+        <div>short text1</div>
+        <div>short text2</div>
+        <div>short text3</div>
+        <div>short text4</div>
+        <div>short text5</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Flex align-items 세로정렬</h2>
+      <div
+        class="container flex-container flex-container-opt1 flex-container-opt3"
+      >
+        <div>Lorem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Flex layout</h2>
+      <div class="container flex-container flex-container-opt4">
+        <div>Lorem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Flex wrap 줄바꿈</h2>
+      <div class="container flex-container flex-container flex-wrap">
+        <div>Lorem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Flex wrap 줄바꿈</h2>
+      <div
+        class="container flex-container flex-container flex-wrap flex-wrap-opt1"
+      >
+        <div>Lorem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed.
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          laboriosam nemo dolor corrupti delectus in.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          distinctio consequatur unde veniam voluptates dolorem deleniti beatae
+          quam temporibus quod!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

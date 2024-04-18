@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 50rem;
+  /* 이거보다(50rem)커지지마 */
+  margin-inline: auto;
+  /* 양옆간격똑같이중앙으로 */
+  background-color: oklch(90% 0 0);
+  padding-inline: 2.5rem;
+}
+
+.container > div {
+  /* 컨테이너 자녀에 있는 div를 지목 */
+  padding: 1rem;
+}
+
+.container > div:nth-child(1) {
+  background-color: oklch(90% 0.05 0);
+  border: 0.0625rem dotted oklch(40% 0.05 0);
+  /* border에 선추가하려면 숫자 뒤에 solid, 점은 dotted */
+  color: oklch(20% 0.05 0);
+
+  /* 이렇게 하면 첫번째 div만 적용이됨 */
+}
+.container > div:nth-child(2) {
+  background-color: oklch(90% 0.05 40);
+  border: 0.0625rem dotted oklch(40% 0.05 40);
+  color: oklch(20% 0.05 40);
+}
+.container > div:nth-child(3) {
+  background-color: oklch(90% 0.05 80);
+  border: 0.0625rem dotted oklch(40% 0.05 80);
+  color: oklch(20% 0.05 80);
+}
+.container > div:nth-child(4) {
+  background-color: oklch(90% 0.05 120);
+  border: 0.0625rem dotted oklch(40% 0.05 120);
+
+  color: oklch(20% 0.05 120);
+}
+.container > div:nth-child(5) {
+  background-color: oklch(90% 0.05 160);
+  border: 0.0625rem dotted oklch(40% 0.05 160);
+  color: oklch(20% 0.05 160);
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* .flex-container > * {
+  flex-container 바로 밑에 있는(>) 자녀(*) 라는 뜼
+} */
+.flex-child-opt1 {
+  flex-grow: 1;
+  /* 자라냐 안 자라냐, 여기에 들어가는 값들은 숫자를 넣는데 기본값이 grow는 0, shrink는 1, basis는 auto로 되어있음 */
+  /* flex-shrink: ; */
+  /* 수축하냐 수축하지 않냐 */
+  /* flex-basis: ; */
+  /* 기본값 */
+}
+
+.flex-child-opt2 {
+  flex-basis: 0;
+  flex-grow: 1;
+  /* contents사이즈를 균등하게 만들기 */
+  /* 이거에 대해서는 자습해보기... */
+}
+
+.flex-container-opt1 {
+  /* gap: 1rem; */
+  column-gap: 16px;
+  /* 가로 갭 */
+  row-gap: 24px;
+  /* 행(세로) 갭 */
+}
+
+.flex-container-opt2 {
+  /* justify-content: right; */
+  /* justify-content: left; */
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  justify-content: space-around;
+}
+
+.flex-container-opt3 {
+  /* align-items: stretch; 기본옵션 */
+  /* align-items: start; */
+  /* start: 위쪽 */
+  /* align-items: end; */
+  /* end: 아래쪽 */
+  align-items: center;
+  /* center: 중앙 */
+}
+
+.flex-container-opt4 {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-opt4 > * {
+  /* flex-basis: 0; */
+  width: 120px;
+}
+
+.flex-wrap {
+  /* flex-wrap: nowrap; 기본값 */
+  flex-wrap: wrap;
+}
+
+.flex-wrap-opt1 {
+  column-gap: 12px;
+  row-gap: 24px;
+}
+
+.flex-wrap-opt1 > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 240px;
+  /* 최솟값을 설정해주면 10rem 보다 작아질 경우 아래로 줄바꿈 하게 됨 */
+  /* width를 직접적으로 박는 것 보다 max 나 min 으로 지정해주는 것이 좋음 */
+}
