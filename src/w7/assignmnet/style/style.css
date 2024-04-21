@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: blanchedalmond; */
+  /* font */
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1380px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  /* for work */
+}
+
+.nav {
+  background-color: #eafaf1;
+  /* padding-inline: 1.5rem; */
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > .nav_logo {
+  background-color: ;
+  list-style: none;
+  padding-left: 0;
+  margin-block: 0;
+}
+
+.nav > .nav_menue-group {
+  background-color: aquamarine;
+  list-style: none;
+  padding-left: 0;
+  margin-block: 0;
+  display: flex;
+  gap: 32px;
+  /* font */
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: left;
+  color: rgb(0, 173, 106);
+}
+
+.main {
+  background-color: #eafaf1;
+}
+
+.main_top {
+  display: flex;
+  justify-content: center;
+  padding-inline: 24px;
+  padding-bottom: 2.5rem;
+  margin-inline: ;
+  margin-bottom: 2.5rem;
+  /* text */
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.main_top_text {
+  /* background-color: aqua; */
+  max-width: 37.5rem;
+
+  /* text */
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.main_top_text > h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+  /* text  */
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+}
+
+.main_top_text > p {
+  margin: 0;
+
+  /* text  */
+  font-weight: ;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+/* card작업 */
+
+.main_center {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+  box-sizing: inherit;
+  margin-inline: -1rem;
+}
+
+.card1_main-card {
+  padding: 2rem;
+}
+
+.card_1 {
+  /* background-color: khaki; */
+  padding-inline: 1.5rem;
+  display: block;
+}
+
+.card_1 > h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4375rem;
+  color: rgb(0, 173, 106);
+
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.card_1 > ul {
+  padding: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+}
+
+.card_1 > p {
+  margin: 0;
+}
+
+.card_2 {
+  background-color: rgb(255, 255, 255);
+  border: rgb(0, 173, 106) solid;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card_2_banner {
+  background-color: rgb(0, 173, 106);
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-block: 0.25rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.0625rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card2_main-card {
+  padding-block: 3rem 1.5rem;
+  padding-inline: 2rem;
+}
+
+.card_2_main {
+  padding-inline: 1rem;
+  text-align: center;
+  display: block;
+
+  cursor: pointer;
+
+  .plan {
+    font-size: 3rem;
+    color: rgb(0, 173, 106);
+    font-weight: 700;
+    line-height: 3rem;
+    margin-top: 1rem;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: 25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    /* inline-block : 컨텐츠만큼의 크기 지정 */
+    background-color: rgb(31, 227, 116);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-inline: 2rem;
+    padding-block: 0.5rem 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .announce {
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+}
+
+/* list 정리 */
+.card_list {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+  letter-spacing: -0.5px;
+  display: block;
+}
+
+.card_list > ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+
+  li {
+    padding-block: 0.5rem;
+  }
+}
+
+.card_3 {
+  background-color: rgb(255, 255, 255);
+  border: rgb(214, 218, 229) solid;
+}
+
+.card_3_banner {
+  border-bottom: rgb(214, 218, 229) solid;
+  background-color: rgb(242, 243, 243);
+  font-size: 0.875rem;
+  line-height: 18.2px;
+  text-align: center;
+  padding-block: 1.25rem 1.5rem;
+  padding-inline: 2rem;
+}
+
+.card3_main-card {
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_3_main {
+  padding-inline: 1rem;
+  text-align: center;
+  display: block;
+
+  cursor: pointer;
+  .plan {
+    font-size: 2.25rem;
+    color: rgb(0, 173, 106);
+    font-weight: 400;
+    line-height: 2.25rem;
+    margin-top: 1rem;
+  }
+  .price {
+    font-size: 1.5rem;
+    font-weight: 25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+    padding-left: 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    /* inline-block : 컨텐츠만큼의 크기 지정 */
+    background-color: rgb(31, 227, 116);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-inline: 2rem;
+    padding-block: 0.5rem 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .announce {
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+}
+
+.main_bottom {
+  padding-inline: 1.5rem;
+  padding-block: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main_bottom_profile {
+  max-width: 50rem;
+}
+
+.main_bottom_profile > img {
+  display: block;
+  width: 80px;
+  margin: auto;
+}
+
+.main_bottom_text-1 {
+  padding-block: 1rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-align: center;
+  display: block;
+}
+
+.main_bottom_text-2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgb(0, 173, 106);
+  text-align: center;
+}
+
+.FAQ {
+  padding-inline: 1.5rem;
+  padding-block: 6rem 5rem;
+  display: block;
+
+  h2 {
+    font-weight: 700;
+    line-height: 55.2px;
+    font-size: 3rem;
+    display: block;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .FAQ_text_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -1rem;
+  }
+
+  .FAQ_text {
+    width: 50%;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4375rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    display: block;
+    margin: 0;
+  }
+}
+
+.footer {
+  background-color: antiquewhite;
+  .info {
+    padding-inline: 1.5rem;
+  }
+
+  .allrights {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    padding-inline: 3rem;
+    padding-block: 0.75rem;
+  }
+}
+
+.info_box {
+  padding-block: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_box-1 {
+  p {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: ;
+    max-width: 100%;
+    width: 560px;
+    color: rgb(0, 173, 106);
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .button {
+    display: inline-block;
+    /* inline-block : 컨텐츠만큼의 크기 지정 */
+    background-color: rgb(31, 227, 116);
+    font-size: 16px;
+    font-weight: 700;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    line-height: 1.5rem;
+  }
+}
+
+.info_box-2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  ul {
+    padding-inline: 1rem;
+    margin: 0;
+    width: 200px;
+
+    .li_title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.6875rem;
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .li_contents {
+      font-size: 1.125rem;
+      line-height: 27px;
+      margin-bottom: 16px;
+      /* display: list-item; */
+      list-style: none;
+    }
+  }
+}
