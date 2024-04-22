@@ -13,40 +13,68 @@ body {
 }
 
 .container {
-  max-width: 1380px;
+  /* background-color: #eafaf1; */
+  /* max-width: 1200px; */
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  /* padding-inline: 1.5rem;   */
 
   /* for work */
 }
 
 .nav {
-  background-color: #eafaf1;
-  /* padding-inline: 1.5rem; */
+  background-color: rgb(234, 250, 241);
+}
+
+.nav_all {
+  max-width: 75rem;
+  margin: auto;
+  /* background-color: #eafaf1; */
+  padding-inline: 1.5rem;
   padding-block: 3rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-.nav > .nav_logo {
-  background-color: ;
+.nav_all > .nav_logo {
+  /* background-color: cyan; */
   list-style: none;
-  padding-left: 0;
-  margin-block: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 2.5rem;
 }
 
-.nav > .nav_menue-group {
-  background-color: aquamarine;
+.nav_all > .nav_menue-group {
+  /* background-color: aquamarine; */
   list-style: none;
   padding-left: 0;
-  margin-block: 0;
+  margin: 0;
+
   display: flex;
+  flex-grow: 0;
+
   gap: 32px;
   /* font */
   font-weight: 700;
   line-height: 1.5rem;
   text-align: left;
   color: rgb(0, 173, 106);
+  li {
+    margin-right: 2.5rem;
+    display: list-item;
+  }
+
+  .sign_up_button {
+    border: rgb(0, 173, 106) 1.6px solid;
+    padding-inline: 16px;
+    padding-block: 0.25rem;
+    text-align: center;
+    margin: 0;
+  }
+  .pricing {
+    color: black;
+  }
 }
 
 .main {
@@ -54,11 +82,13 @@ body {
 }
 
 .main_top {
+  max-width: 75rem;
+  margin: auto;
   display: flex;
   justify-content: center;
   padding-inline: 24px;
   padding-bottom: 2.5rem;
-  margin-inline: ;
+
   margin-bottom: 2.5rem;
   /* text */
   line-height: 1.5rem;
@@ -95,12 +125,17 @@ body {
 /* card작업 */
 
 .main_center {
+  max-width: 75rem;
+  margin: auto;
+
   display: flex;
+
   flex-grow: 1;
   flex-basis: 0;
   align-items: center;
   box-sizing: inherit;
-  margin-inline: -1rem;
+  /* margin-inline: -1rem; */
+  /* margin: auto; */
 }
 
 .card1_main-card {
@@ -108,7 +143,8 @@ body {
 }
 
 .card_1 {
-  /* background-color: khaki; */
+  background-color: khaki;
+  width: 20.625rem;
   padding-inline: 1.5rem;
   display: block;
 }
@@ -278,6 +314,8 @@ body {
 }
 
 .main_bottom {
+  max-width: 75rem;
+  margin: auto;
   padding-inline: 1.5rem;
   padding-block: 6rem;
   display: flex;
@@ -310,6 +348,8 @@ body {
 }
 
 .FAQ {
+  max-width: 1200px;
+  margin: auto;
   padding-inline: 1.5rem;
   padding-block: 6rem 5rem;
   display: block;
@@ -351,12 +391,19 @@ body {
 }
 
 .footer {
-  background-color: antiquewhite;
+  background-color: rgb(8, 12, 22);
+}
+
+.footer_all {
+  max-width: 1200px;
+  margin: auto;
+  /* background-color: rgb(8, 12, 22); */
   .info {
     padding-inline: 1.5rem;
   }
 
   .allrights {
+    color: rgb(131, 133, 138);
     font-size: 0.75rem;
     line-height: 1.125rem;
     padding-inline: 3rem;
@@ -371,25 +418,24 @@ body {
 }
 
 .info_box-1 {
-  p {
+  padding-inline: 1rem;
+  display: block;
+  img {
     font-size: 60px;
     font-weight: 700;
     line-height: ;
     max-width: 100%;
-    width: 560px;
-    color: rgb(0, 173, 106);
+    width: 160px;
     margin-top: 0;
     margin-bottom: 3rem;
   }
   .button {
-    display: inline-block;
-    /* inline-block : 컨텐츠만큼의 크기 지정 */
+    display: block;
     background-color: rgb(31, 227, 116);
     font-size: 16px;
     font-weight: 700;
     padding-inline: 2rem;
     padding-block: 1rem;
-
     line-height: 1.5rem;
   }
 }
@@ -404,6 +450,7 @@ body {
     width: 200px;
 
     .li_title {
+      color: white;
       font-size: 1.125rem;
       font-weight: 700;
       line-height: 1.6875rem;
@@ -413,6 +460,7 @@ body {
     }
 
     .li_contents {
+      color: rgb(31, 227, 116);
       font-size: 1.125rem;
       line-height: 27px;
       margin-bottom: 16px;
