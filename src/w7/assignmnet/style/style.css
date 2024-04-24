@@ -261,6 +261,7 @@ body {
 }
 
 .card_list > ul {
+  list-style-image: url(https://pulseapp.com/img/icons/icon-check-bullet.svg);
   padding: 0;
   margin: 0;
   margin-bottom: 1rem;
@@ -328,6 +329,7 @@ body {
     margin-bottom: 2rem;
   }
   .announce {
+    color: #464951;
     font-weight: 700;
     font-size: 0.75rem;
   }
