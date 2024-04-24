@@ -8,7 +8,7 @@ body {
   /* font */
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
@@ -130,7 +130,7 @@ body {
   margin: 0;
 
   /* text  */
-  font-weight: ;
+
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
@@ -322,7 +322,7 @@ body {
     margin-top: 1rem;
   }
   .price {
-    color: #464951;
+    color: #83858a;
     font-size: 1.5rem;
     font-weight: 25rem;
     margin-top: 0.5rem;
@@ -458,7 +458,7 @@ body {
   img {
     font-size: 60px;
     font-weight: 700;
-    line-height: ;
+
     max-width: 100%;
     width: 160px;
     margin-top: 0;
