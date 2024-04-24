@@ -66,7 +66,7 @@ body {
   }
 
   .sign_up_button {
-    border: rgb(0, 173, 106) 1.6px solid;
+    border: rgb(0, 173, 106) 2px solid;
     padding-inline: 16px;
     padding-block: 0.25rem;
     text-align: center;
@@ -125,28 +125,34 @@ body {
 /* card작업 */
 
 .main_center {
+  padding-inline: 24px;
   max-width: 75rem;
   margin: auto;
+  width: 100%;
 
-  display: flex;
-
-  flex-grow: 1;
-  flex-basis: 0;
-  align-items: center;
-  box-sizing: inherit;
   /* margin-inline: -1rem; */
   /* margin: auto; */
 }
 
+.main_card-all {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  align-items: center;
+  margin-inline: -1rem;
+}
+
 .card1_main-card {
+  width: 33.33333%;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .card_1 {
-  background-color: khaki;
-  width: 20.625rem;
+  /* background-color: khaki; */
+  /* width: 20.625rem; */
   padding-inline: 1.5rem;
-  display: block;
+  /* display: flex; */
 }
 
 .card_1 > h2 {
@@ -160,6 +166,7 @@ body {
 }
 
 .card_1 > ul {
+  color: #464951;
   padding: 0;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -169,10 +176,14 @@ body {
 }
 
 .card_1 > p {
+  color: #464951;
   margin: 0;
 }
 
 .card_2 {
+  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   border: rgb(0, 173, 106) solid;
   border-top-left-radius: 12px;
@@ -212,6 +223,7 @@ body {
     margin-top: 1rem;
   }
   .price {
+    color: #83858a;
     font-size: 1.5rem;
     font-weight: 25rem;
     margin-top: 0.5rem;
@@ -227,8 +239,10 @@ body {
     padding-inline: 2rem;
     padding-block: 0.5rem 0.75rem;
     margin-bottom: 2rem;
+    color: #464951;
   }
   .announce {
+    color: #464951;
     font-weight: 700;
     font-size: 0.75rem;
   }
@@ -236,6 +250,8 @@ body {
 
 /* list 정리 */
 .card_list {
+  color: #464951;
+
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -255,11 +271,13 @@ body {
 }
 
 .card_3 {
+  width: 33.33333%;
   background-color: rgb(255, 255, 255);
   border: rgb(214, 218, 229) solid;
 }
 
 .card_3_banner {
+  color: #464951;
   border-bottom: rgb(214, 218, 229) solid;
   background-color: rgb(242, 243, 243);
   font-size: 0.875rem;
@@ -290,6 +308,7 @@ body {
     margin-top: 1rem;
   }
   .price {
+    color: #464951;
     font-size: 1.5rem;
     font-weight: 25rem;
     margin-top: 0.5rem;
@@ -298,6 +317,7 @@ body {
     padding-left: 0.5rem;
   }
   .button {
+    color: #464951;
     display: inline-block;
     /* inline-block : 컨텐츠만큼의 크기 지정 */
     background-color: rgb(31, 227, 116);
