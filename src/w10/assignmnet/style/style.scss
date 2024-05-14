@@ -4,29 +4,40 @@
 
 body {
   margin: 0;
-  font-family: "roboto", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 .nav {
-  background-color: blueviolet;
+  background-color: #f6f6eb;
 }
 
 .nav_bar {
-  max-width: 1200px;
+  max-width: 1000px;
   margin-inline: auto;
-  padding: 18px;
-  gap: 1rem;
+  padding: 16px;
+  color: #381fd1;
+  letter-spacing: 1px;
+  font-weight: 1000;
 
   ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    // flex 적용
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
     li {
       padding-inline: 8px;
+    }
+
+    svg {
+      max-width: 32px;
+      max-height: 32px;
     }
   }
 
@@ -34,23 +45,36 @@ body {
     padding-left: 160px;
   }
   .trial {
-    background-color: aquamarine;
+    background-color: #381fd1;
     border-radius: 8px;
+    padding-inline: 12px;
+    padding-block: 8px;
+    color: #ffffff;
   }
 }
 
 .content {
-  background-color: antiquewhite;
+  max-width: 80rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  padding-inline: 1.5rem;
 }
 
 .search_bar {
-  background-color: oklch(0.9 0 1);
+  padding-top: 64px;
+  background-color: #ffffff;
+  min-width: 280px;
 
   .search_library_bar {
+    color: #4b4b4e;
+
     p {
       margin: 0;
+      margin-bottom: 14px;
     }
     .input_box {
+      background-color: #381fd1;
     }
   }
 
@@ -60,21 +84,56 @@ body {
   }
 
   .submit {
-    background-color: oklch(0.8 0 0);
+    background-color: #f3f2fc;
+    border-radius: 8px;
+    margin-top: 24px;
+    padding: 24px;
 
     &-title {
+      font-size: 24px;
+      font-weight: 900;
     }
     &-add {
+      margin-block: 8px 24px;
     }
     &-btn {
+      color: #ffffff;
+      padding-block: 12px;
+      padding-inline: 24px;
+      background-color: #381fd1;
+      border-radius: 6px;
+      text-align: center;
     }
   }
+}
+
+.main_content {
+  margin-left: 4rem;
+  margin-top: 4rem;
 }
 
 .main_content_title {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.main_content_title > h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-block: 16px;
+}
+.main_content_title > a {
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.1rem;
+  // text-decoration: none;/
+  color: #381fd1;
+}
+.main_content_add-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .main_content_library-grid-1 {
@@ -86,9 +145,27 @@ body {
   .library_box {
     padding: 24px 24px 40px 24px;
 
+    border: 1px solid #e5e5e6;
+    border-radius: 0.5rem;
+
     img {
-      max-width: 80px;
-      max-height: 80px;
+      max-width: 40px;
+      max-height: 40px;
+      border: 1px solid #e5e5e6;
+      border-radius: 0.5rem;
+    }
+    p {
+      letter-spacing: 0.08rem;
+      color: #381fd1;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-block: 12px 8px;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 1.1;
+      margin: 0;
     }
   }
 }
@@ -100,8 +177,17 @@ body {
   margin-bottom: 64px;
 
   .library_box {
-    padding: 24px;
+    padding: 32px;
+    background-color: #f6f6eb;
+    border-radius: 0.5rem;
+    min-height: 350px;
 
+    h4 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 1.1;
+    }
     img {
       max-width: 100%;
     }
@@ -109,22 +195,42 @@ body {
 }
 
 .footer {
-  background-color: gainsboro;
   margin-top: 96px;
+
+  // margin-inline: auto;
+  background-color: #11284b;
+
+  &_list-copyright {
+    padding-top: 5rem;
+    max-width: 80rem;
+    margin-inline: auto;
+    // background-color: #11284b;
+  }
 }
 
 .footer_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 6rem;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #f6f6eb;
 
   &_box {
+    margin-bottom: 8px;
   }
 }
 
 .copyright {
-  background-color: aquamarine;
   padding-block: 5rem;
   display: flex;
   justify-content: space-between;
+
+  &_right {
+    color: #fedb63;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+  }
 }
