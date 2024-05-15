@@ -55,6 +55,7 @@ body {
 
 .content {
   max-width: 80rem;
+
   margin-inline: auto;
   display: flex;
   justify-content: center;
@@ -64,23 +65,35 @@ body {
 .search_bar {
   padding-top: 64px;
   background-color: #ffffff;
-  min-width: 280px;
+  min-width: 18rem;
 
   .search_library_bar {
     color: #4b4b4e;
+    margin-bottom: 16px;
 
     p {
       margin: 0;
       margin-bottom: 14px;
     }
     .input_box {
-      background-color: #381fd1;
+      // background-color: #381fd1;
+      border: 0.125rem solid #acacaf;
+      border-radius: 0.25rem;
+      padding-inline: 0.5rem;
+      padding-block: 12px 0.5rem;
+      img {
+        max-width: 1.5rem;
+      }
     }
   }
 
   .category {
     padding-block: 1rem;
     padding-left: 20px;
+
+    .home {
+      color: #381fd1;
+    }
   }
 
   .submit {
@@ -138,8 +151,12 @@ body {
 
 .main_content_library-grid-1 {
   display: grid;
+  // grid-template-columns: repeat(auto-fit, );
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+
   grid-gap: 32px;
+  // grid-auto-rows: 1fr;
   margin-bottom: 64px;
 
   .library_box {
@@ -172,24 +189,34 @@ body {
 
 .main_content_library-grid-2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(14.6875rem, 1fr));
+  grid-auto-rows: 1fr;
   grid-gap: 32px;
   margin-bottom: 64px;
 
   .library_box {
-    padding: 32px;
     background-color: #f6f6eb;
     border-radius: 0.5rem;
-    min-height: 350px;
+    position: relative;
 
     h4 {
       margin: 0;
       font-size: 1.5rem;
       font-weight: 900;
       line-height: 1.1;
+
+      position: absolute;
+      top: 10%;
+      left: 10%;
     }
     img {
       max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    .box-img-2 {
+      position: absolute;
+      top: 42%;
     }
   }
 }
@@ -226,6 +253,15 @@ body {
   padding-block: 5rem;
   display: flex;
   justify-content: space-between;
+
+  &_left {
+    display: flex;
+    gap: 12px;
+  }
+  img {
+    display: block;
+    max-width: 2rem;
+  }
 
   &_right {
     color: #fedb63;
