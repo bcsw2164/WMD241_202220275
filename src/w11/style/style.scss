@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.btn {
+  cursor: pointer;
+  max-width: fit-content;
+  // 안에 있는 자식요소 중 가장 큰 것이 줄바꿈 되지 않게
+  // width: min-content;
+  // 가장 긴 단어 기준으로 맞춤
+  // width: max-content;
+  // 컨텐츠 내용이 보존될 수 있는 가장 큰 크키로 맞춤
+
+  padding-inline: 1rem;
+  padding-block: 8px 6px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: capitalize;
+  background-color: oklch(0.4 0.1 150);
+  color: oklch(0.9 0.1 150);
+  border-radius: 64rem;
+
+  // 나중에 지울요소
+  margin-top: 1.25rem;
+  transition: all 1000ms ease-out;
+
+  &:hover {
+    // 마우스가 위에 떠있으면 이라는 상황 hover
+    background-color: oklch(0.4 0.1 240);
+    color: oklch(0.9 0.1 240);
+  }
+
+  &--type {
+    &-elevated {
+      background-color: oklch(0.95 0.0025 150);
+      color: oklch(0.45 0.1 150);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      &:hover {
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+        background-color: oklch(0.95 0.0025 240);
+        color: oklch(0.45 0.1 240);
+      }
+    }
+    &-tonal {
+      background-color: oklch(0.8 0.05 150);
+      color: oklch(0.3 0.1 150);
+    }
+    &-ouline {
+      color: oklch(0.4 0.1 150);
+      background-color: unset;
+      border: 0.0625rem solid oklch(0.5 0 150);
+    }
+    &-text {
+      color: oklch(0.4 0.1 150);
+      padding-inline: 12px;
+      background-color: unset;
+
+      &:hover {
+        background-color: unset;
+        color: oklch(1 0 150);
+        animation-name: rainbow;
+        animation-duration: 500ms;
+        animation-iteration-count: 4;
+
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: oklch(0.5, 0.2, 0);
+    transform: translate(0rem, 0rem);
+  }
+  25% {
+    transform: translate(1rem, 0rem);
+  }
+  50% {
+    transform: translate(1rem, 1rem);
+  }
+  75% {
+    transform: translate(0rem, 1rem);
+  }
+  100% {
+    background-color: oklch(0.5, 0.2, 240);
+    transform: translate(0rem, 0rem);
+  }
+}
