@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stp2-lottie embeded</title>
+    <!-- src자리에 asset 폴더에 있는 자바스크립트 경로를 넣어도 됨 -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <!-- 여러개의 로띠를 사용한다해도 script는 하나만 있으면됨(나중에 헤드에 옮길예정) -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <!-- 위에있는 스크립트가 있다는 전제하에 -->
+    <script>
+      LottieInteractivity.create({
+        player: "#lottie-2",
+        mode: "cursor",
+        actions: [
+          {
+            type: "click",
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          qui.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In saepe
+          laudantium fuga perspiciatis natus assumenda totam voluptas distinctio
+          dolore corrupti recusandae, accusantium consectetur! Sint qui
+          quibusdam quo, quam nisi delectus eligendi aliquam praesentium soluta
+          vero ab architecto deleniti ea voluptatibus, sapiente tempore officiis
+          sequi eveniet. Nam doloribus sed ab ea.
+        </p>
+
+        <dotlottie-player
+          id="lottie-1"
+          class="lottie"
+          src="https://lottie.host/54cf450e-35d9-4b53-af6e-e27be56437cb/fqL5enn7xF.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></dotlottie-player>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa
+          at dolorum exercitationem impedit corrupti vel possimus id rerum
+          voluptatibus.
+        </p>
+        <lottie-player
+          id="lottie-2"
+          class="lottie"
+          src="./asset/lottie_downloaded.json.json"
+          background="transparent"
+          speed="1"
+        ></lottie-player>
+      </div>
+    </div>
+  </body>
+</html>
